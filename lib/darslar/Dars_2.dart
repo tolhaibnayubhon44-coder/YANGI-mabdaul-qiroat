@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zoom/zoom.dart';
+// import 'package:zoom/zoom.dart';
 
 class Dars2 extends StatefulWidget {
   const Dars2({super.key});
@@ -48,42 +48,40 @@ class _matnState extends State<matn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: InteractiveViewer(
-        child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+          ),
+        ),
+        child: Column(
+          children: [
+            SizedBox(height: 30),
+            Container(
+              width: 400,
+              height: 470,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/images/2dars_1matn.png"),
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
             ),
-          ),
-          child: Column(
-            children: [
-              SizedBox(height: 30),
-              Container(
-                width: 400,
-                height: 470,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/2dars_1matn.png"),
-                    fit: BoxFit.fitWidth,
-                  ),
+            Container(
+              width: 400,
+              height: 70,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/images/2dars_2matn.png"),
+                  fit: BoxFit.fitWidth,
                 ),
               ),
-              Container(
-                width: 400,
-                height: 70,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/2dars_2matn.png"),
-                    fit: BoxFit.fitWidth,
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
@@ -101,43 +99,41 @@ class _lugatState extends State<lugat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: InteractiveViewer(
-        child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+          ),
+        ),
+        child: Column(
+          children: [
+            Container(
+              width: 300,
+              height: 250,
+              decoration: BoxDecoration(
+                // color: Colors.amber,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/2dars_1lugat.png"),
+                  fit: BoxFit.fill,
+                ),
+              ),
             ),
-          ),
-          child: Column(
-            children: [
-              Container(
-                width: 300,
-                height: 250,
-                decoration: BoxDecoration(
-                  // color: Colors.amber,
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/2dars_1lugat.png"),
-                    fit: BoxFit.fill,
-                  ),
+            Container(
+              width: 300,
+              height: 250,
+              decoration: BoxDecoration(
+                // color: Colors.amber,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/2dars_2lugat.png"),
+                  fit: BoxFit.fill,
                 ),
               ),
-              Container(
-                width: 300,
-                height: 250,
-                decoration: BoxDecoration(
-                  // color: Colors.amber,
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/2dars_2lugat.png"),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:zoom/zoom.dart';
 
 class Dars1 extends StatelessWidget {
   const Dars1({Key? key}) : super(key: key);
@@ -43,20 +42,18 @@ class _matnState extends State<matn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: InteractiveViewer(
-        child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
-            ),
-            image: DecorationImage(
-              image: AssetImage("assets/images/mat1-removebg-preview (1).png"),
-              fit: BoxFit.fitWidth,
-            ),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+          ),
+          image: DecorationImage(
+            image: AssetImage("assets/images/mat1-removebg-preview (1).png"),
+            fit: BoxFit.fitWidth,
           ),
         ),
       ),
@@ -75,39 +72,37 @@ class _lugatState extends State<lugat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: InteractiveViewer(
-        child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+          ),
+        ),
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              height: 250,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/images/1dars_1lugat.png"),
+                ),
+              ),
             ),
-          ),
-          child: Column(
-            children: [
-              Container(
-                width: double.infinity,
-                height: 250,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/1dars_1lugat.png"),
-                  ),
+            Container(
+              width: double.infinity,
+              height: 250,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/images/1dars_2lugat.png"),
                 ),
               ),
-              Container(
-                width: double.infinity,
-                height: 250,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/1dars_2lugat.png"),
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

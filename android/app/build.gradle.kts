@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.yangi_mabdaul_qiroat"
+    namespace = "com.example.yangi"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 

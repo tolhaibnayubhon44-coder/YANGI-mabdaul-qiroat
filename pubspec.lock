@@ -344,14 +344,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
-  zoom:
-    dependency: "direct main"
-    description:
-      name: zoom
-      sha256: "0f5b40f8e1fee9d2f670cc739b0fddb8248551cfd2567b8f171a834ad813df42"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.0"
 sdks:
   dart: ">=3.9.0 <4.0.0"
   flutter: ">=3.35.0"
