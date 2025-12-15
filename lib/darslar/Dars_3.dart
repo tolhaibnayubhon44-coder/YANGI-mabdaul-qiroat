@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:zoom/zoom.dart';
+import 'package:zoom_viewer/zoom_viewer.dart';
 
 class Dars3 extends StatefulWidget {
   const Dars3({super.key});
@@ -48,44 +48,46 @@ class _matnState extends State<matn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+      body: ZoomViewer(
+        child: Container(
+          height: double.infinity,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+            ),
           ),
-        ),
-        child: Column(
-          children: [
-            SizedBox(height: 100),
-            Container(
-              width: 400,
-              height: 230,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                    "assets/images/3dars_1matn-removebg-preview.png",
+          child: Column(
+            children: [
+              SizedBox(height: 100),
+              Container(
+                width: 400,
+                height: 230,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                      "assets/images/3dars_1matn-removebg-preview.png",
+                    ),
+                    fit: BoxFit.fitWidth,
                   ),
-                  fit: BoxFit.fitWidth,
                 ),
               ),
-            ),
-            Container(
-              width: 400,
-              height: 70,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                    "assets/images/3dars_2matn-removebg-preview.png",
+              Container(
+                width: 400,
+                height: 70,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                      "assets/images/3dars_2matn-removebg-preview.png",
+                    ),
+                    fit: BoxFit.fitWidth,
                   ),
-                  fit: BoxFit.fitWidth,
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -103,71 +105,73 @@ class _lugatState extends State<lugat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+      body: ZoomViewer(
+        child: Container(
+          height: double.infinity,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
+            ),
           ),
-        ),
-        child: Column(
-          children: [
-            Container(
-              width: 300,
-              height: 250,
-              decoration: BoxDecoration(
-                // color: Colors.amber,
-                image: DecorationImage(
-                  image: AssetImage(
-                    "assets/images/3dars_1lugat-removebg-preview.png",
+          child: Column(
+            children: [
+              Container(
+                width: 300,
+                height: 250,
+                decoration: BoxDecoration(
+                  // color: Colors.amber,
+                  image: DecorationImage(
+                    image: AssetImage(
+                      "assets/images/3dars_1lugat-removebg-preview.png",
+                    ),
+                    fit: BoxFit.fill,
                   ),
-                  fit: BoxFit.fill,
                 ),
               ),
-            ),
-            Container(
-              width: 300,
-              height: 250,
-              decoration: BoxDecoration(
-                // color: Colors.amber,
-                image: DecorationImage(
-                  image: AssetImage(
-                    "assets/images/3dars_2lugat-removebg-preview.png",
+              Container(
+                width: 300,
+                height: 250,
+                decoration: BoxDecoration(
+                  // color: Colors.amber,
+                  image: DecorationImage(
+                    image: AssetImage(
+                      "assets/images/3dars_2lugat-removebg-preview.png",
+                    ),
+                    fit: BoxFit.fill,
                   ),
-                  fit: BoxFit.fill,
                 ),
               ),
-            ),
-            Container(
-              width: 300,
-              height: 50,
-              decoration: BoxDecoration(
-                // color: Colors.amber,
-                image: DecorationImage(
-                  image: AssetImage(
-                    "assets/images/3dars_3lugat-removebg-preview.png",
+              Container(
+                width: 300,
+                height: 50,
+                decoration: BoxDecoration(
+                  // color: Colors.amber,
+                  image: DecorationImage(
+                    image: AssetImage(
+                      "assets/images/3dars_3lugat-removebg-preview.png",
+                    ),
+                    // fit: BoxFit.fill,
                   ),
-                  // fit: BoxFit.fill,
                 ),
               ),
-            ),
-            Container(
-              width: 300,
-              height: 50,
-              decoration: BoxDecoration(
-                // color: Colors.amber,
-                image: DecorationImage(
-                  image: AssetImage(
-                    "assets/images/3dars_4lugat-removebg-preview.png",
+              Container(
+                width: 300,
+                height: 50,
+                decoration: BoxDecoration(
+                  // color: Colors.amber,
+                  image: DecorationImage(
+                    image: AssetImage(
+                      "assets/images/3dars_4lugat-removebg-preview.png",
+                    ),
+                    // fit: BoxFit.fill,
                   ),
-                  // fit: BoxFit.fill,
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
