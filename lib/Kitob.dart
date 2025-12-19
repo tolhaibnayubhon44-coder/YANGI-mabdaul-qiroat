@@ -141,7 +141,7 @@ Widget _buildBookButton(BuildContext context, int bookNumber, bool isActive) {
                           ),
                         ),
                         Text(
-                          isActive ? '30 ta dars' : 'Tez kunlarda...',
+                          isActive ? '52 ta dars' : 'Tez kunlarda...',
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.white.withOpacity(0.8),
