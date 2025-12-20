@@ -130,51 +130,85 @@ class _DarsState extends State<Dars> {
                             MaterialPageRoute(builder: (context) => Dars2()),
                           );
                         },
-                        child: Container(
-                          height: 100,
-                          width: 100,
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Color.fromARGB(255, 255, 165, 119),
-                                Color(0xFFE65100),
-                              ],
-                            ),
-                            borderRadius: BorderRadius.circular(25),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(0, 0),
-                                color: const Color.fromARGB(255, 255, 157, 0),
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(255, 255, 165, 119),
+                                    Color(0xFFE65100),
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 20,
+                                    spreadRadius: 2,
+                                    offset: Offset(0, 0),
+                                    color: const Color.fromARGB(
+                                      255,
+                                      255,
+                                      157,
+                                      0,
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                          child: Center(
-                            child: Column(
-                              children: [
-                                SizedBox(height: 16),
-                                Text(
-                                  "2",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
+                              child: Center(
+                                child: Column(
+                                  children: [
+                                    SizedBox(height: 16),
+                                    Text(
+                                      "2",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dars",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Dars",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
+                              ),
                             ),
-                          ),
+                            Positioned(
+                              child: Center(
+                                child: Container(
+                                  height: 100,
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.5),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  child: Center(
+                                    child: Container(
+                                      height: 50,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            "assets/images/qulf.png",
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       InkWell(
@@ -184,51 +218,85 @@ class _DarsState extends State<Dars> {
                             MaterialPageRoute(builder: (context) => Dars3()),
                           );
                         },
-                        child: Container(
-                          height: 100,
-                          width: 100,
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Color.fromARGB(255, 255, 165, 119),
-                                Color(0xFFE65100),
-                              ],
-                            ),
-                            borderRadius: BorderRadius.circular(25),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(0, 0),
-                                color: const Color.fromARGB(255, 255, 157, 0),
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(255, 255, 165, 119),
+                                    Color(0xFFE65100),
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 20,
+                                    spreadRadius: 2,
+                                    offset: Offset(0, 0),
+                                    color: const Color.fromARGB(
+                                      255,
+                                      255,
+                                      157,
+                                      0,
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                          child: Center(
-                            child: Column(
-                              children: [
-                                SizedBox(height: 16),
-                                Text(
-                                  "3",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
+                              child: Center(
+                                child: Column(
+                                  children: [
+                                    SizedBox(height: 16),
+                                    Text(
+                                      "3",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dars",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Dars",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
+                              ),
                             ),
-                          ),
+                            Positioned(
+                              child: Center(
+                                child: Container(
+                                  height: 100,
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.5),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  child: Center(
+                                    child: Container(
+                                      height: 50,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            "assets/images/qulf.png",
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
