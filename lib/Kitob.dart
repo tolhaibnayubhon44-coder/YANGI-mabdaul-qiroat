@@ -38,7 +38,7 @@ class _KitobState extends State<Kitob> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Qur\'on o\'qishni o\'rganing',
+                  "Arab tilida so'zlashishni o'rganing",
                   style: TextStyle(fontSize: 16, color: Color(0xFFFF6F00)),
                 ),
                 const SizedBox(height: 48),
