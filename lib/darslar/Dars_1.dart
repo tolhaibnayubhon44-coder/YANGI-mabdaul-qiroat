@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_viewer/zoom_viewer.dart';
-
+import 'package:easy_zoom_widget/easy_zoom_widget.dart';
 class Dars1 extends StatelessWidget {
   const Dars1({Key? key}) : super(key: key);
 
@@ -43,7 +42,7 @@ class _matnState extends State<matn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ZoomViewer(
+      body: EasyZoomWidget(
         child: Container(
           height: double.infinity,
           width: double.infinity,
@@ -75,7 +74,7 @@ class _lugatState extends State<lugat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ZoomViewer(
+      body: EasyZoomWidget(
         child: Container(
           height: double.infinity,
           width: double.infinity,
