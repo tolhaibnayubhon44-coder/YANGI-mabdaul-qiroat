@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mabdaul_qiroat/darslar/Dars_1.dart';
 import 'package:mabdaul_qiroat/darslar/Dars_2.dart';
 import 'package:mabdaul_qiroat/darslar/Dars_3.dart';
+import 'package:mabdaul_qiroat/darslar/Dars_4.dart';
+import 'package:mabdaul_qiroat/darslar/Dars_5.dart';
 
 class Dars extends StatefulWidget {
   const Dars({super.key});
@@ -309,101 +311,179 @@ class _DarsState extends State<Dars> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       InkWell(
-                        onTap: () {},
-                        child: Container(
-                          height: 100,
-                          width: 100,
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Color.fromARGB(255, 255, 165, 119),
-                                Color(0xFFE65100),
-                              ],
-                            ),
-                            borderRadius: BorderRadius.circular(25),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(0, 0),
-                                color: const Color.fromARGB(255, 255, 157, 0),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Dars4()),
+                          );
+                        },
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(255, 255, 165, 119),
+                                    Color(0xFFE65100),
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 20,
+                                    spreadRadius: 2,
+                                    offset: Offset(0, 0),
+                                    color: const Color.fromARGB(
+                                      255,
+                                      255,
+                                      157,
+                                      0,
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                          child: Center(
-                            child: Column(
-                              children: [
-                                SizedBox(height: 16),
-                                Text(
-                                  "4",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
+                              child: Center(
+                                child: Column(
+                                  children: [
+                                    SizedBox(height: 16),
+                                    Text(
+                                      "4",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dars",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Dars",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
+                              ),
                             ),
-                          ),
+                            Positioned(
+                              child: Center(
+                                child: Container(
+                                  height: 100,
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.5),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  child: Center(
+                                    child: Container(
+                                      height: 50,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            "assets/images/qulf.png",
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       InkWell(
-                        onTap: () {},
-                        child: Container(
-                          height: 100,
-                          width: 100,
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Color.fromARGB(255, 255, 165, 119),
-                                Color(0xFFE65100),
-                              ],
-                            ),
-                            borderRadius: BorderRadius.circular(25),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(0, 0),
-                                color: const Color.fromARGB(255, 255, 157, 0),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Dars5()),
+                          );
+                        },
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(255, 255, 165, 119),
+                                    Color(0xFFE65100),
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 20,
+                                    spreadRadius: 2,
+                                    offset: Offset(0, 0),
+                                    color: const Color.fromARGB(
+                                      255,
+                                      255,
+                                      157,
+                                      0,
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                          child: Center(
-                            child: Column(
-                              children: [
-                                SizedBox(height: 16),
-                                Text(
-                                  "5",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
+                              child: Center(
+                                child: Column(
+                                  children: [
+                                    SizedBox(height: 16),
+                                    Text(
+                                      "5",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dars",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Dars",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
+                              ),
                             ),
-                          ),
+                            Positioned(
+                              child: Center(
+                                child: Container(
+                                  height: 100,
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.5),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  child: Center(
+                                    child: Container(
+                                      height: 50,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            "assets/images/qulf.png",
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       InkWell(
