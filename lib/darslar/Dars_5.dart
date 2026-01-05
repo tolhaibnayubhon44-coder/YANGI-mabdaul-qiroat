@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:easy_zoom_widget/easy_zoom_widget.dart';
-import 'package:mabdaul_qiroat/darslar/Dars_2.dart';
 
 class Dars5 extends StatefulWidget {
   const Dars5({super.key});
@@ -39,6 +38,13 @@ class _Dars5State extends State<Dars5> {
   }
 }
 
+class matn extends StatefulWidget {
+  const matn({super.key});
+
+  @override
+  State<matn> createState() => _matnState();
+}
+
 class _matnState extends State<matn> {
   @override
   Widget build(BuildContext context) {
@@ -57,15 +63,18 @@ class _matnState extends State<matn> {
           child: Column(
             children: [
               SizedBox(height: 30),
-              Container(
-                width: 400,
-                height: 470,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(
-                      "assets/images/5dars_matn-removebg-preview.png",
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 400,
+                  height: 470,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(
+                        "assets/images/5dars_matn-removebg-preview.png",
+                      ),
+                      fit: BoxFit.fitWidth,
                     ),
-                    fit: BoxFit.fitWidth,
                   ),
                 ),
               ),
@@ -103,7 +112,7 @@ class _lugatState extends State<lugat> {
             children: [
               Container(
                 width: 300,
-                height: 250,
+                height: 220,
                 decoration: BoxDecoration(
                   // color: Colors.amber,
                   image: DecorationImage(
@@ -116,7 +125,7 @@ class _lugatState extends State<lugat> {
               ),
               Container(
                 width: 300,
-                height: 250,
+                height: 220,
                 decoration: BoxDecoration(
                   // color: Colors.amber,
                   image: DecorationImage(
@@ -156,9 +165,42 @@ class _fellarState extends State<fellar> {
               end: Alignment.bottomRight,
               colors: [Color(0xFFFFF3E0), Color(0xFFFFE0B2), Color(0xFFFFF3E0)],
             ),
-            image: DecorationImage(
-              image: AssetImage("assets/images/.png"),
-              fit: BoxFit.fitWidth,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SingleChildScrollView(scrollDirection: Axis.vertical,
+              child: Column(
+                children: [
+                  Row(mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                     
+                      Container(
+                        width: 60,
+                        height: 600,
+                        decoration: BoxDecoration(
+                          // color: Colors.amber,
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "assets/images/5dars_fel2-removebg-preview.png",
+                            ),fit: BoxFit.fill
+                          ),
+                        ),
+                      ), Container(
+                        width: 300,
+                        height: 600,
+                        decoration: BoxDecoration(
+                          // color: Colors.white,
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "assets/images/5dars_fel1-removebg-preview.png",
+                            ),fit: BoxFit.fill
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),

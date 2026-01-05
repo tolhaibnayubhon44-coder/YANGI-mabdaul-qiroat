@@ -62,13 +62,16 @@ class _matnState extends State<matn> {
           child: Column(
             children: [
               SizedBox(height: 30),
-              Container(
-                width: 400,
-                height: 470,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/4dars_matn.png"),
-                    fit: BoxFit.fitWidth,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 400,
+                  height: 470,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/4dars_matn.png"),
+                      fit: BoxFit.fitWidth,
+                    ),
                   ),
                 ),
               ),
